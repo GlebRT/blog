@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Регистрация
+{% endblock %}
+{% block body %}
+<div class="modal modal-sheet position-static d-block bg-body-secondary p-4 py-md-5" tabindex="-1" role="dialog" id="modalSignin">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content rounded-4 shadow">
+      <div class="modal-header p-5 pb-4 border-bottom-0">
+        <h1 class="fw-bold mb-0 fs-2"><ya-tr-span data-index="18-0" data-translated="true" data-source-lang="en" data-target-lang="ru" data-value="Sign up for free" data-translation="Зарегистрируйтесь бесплатно" data-ch="0" data-type="trSpan">Зарегистрируйтесь бесплатно</ya-tr-span></h1>
+      </div>
+
+      <div class="modal-body p-5 pt-0">
+        <form class="">
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput"><ya-tr-span data-index="19-0" data-translated="true" data-source-lang="en" data-target-lang="ru" data-value="Email address" data-translation="Эл. адрес" data-ch="0" data-type="trSpan">Эл. адрес</ya-tr-span></label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Пароль">
+            <label for="floatingPassword">Пароль</label>
+          </div>
+          <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit"><ya-tr-span data-index="20-0" data-translated="true" data-source-lang="en" data-target-lang="ru" data-value="Sign up" data-translation="Регистрация" data-ch="0" data-type="trSpan">Регистрация</ya-tr-span></button>
+          <small class="text-body-secondary"><ya-tr-span data-index="20-1" data-translated="true" data-source-lang="en" data-target-lang="ru" data-value="By clicking Sign up, you agree to the terms of use." data-translation="Нажимая Зарегистрироваться, вы соглашаетесь с условиями использования." data-ch="0" data-type="trSpan">Нажимая Зарегистрироваться, вы соглашаетесь с условиями использования.</ya-tr-span></small>
+          <hr class="my-4">
+          <h2 class="fs-5 fw-bold mb-3"><ya-tr-span data-index="22-0" data-translated="true" data-source-lang="en" data-target-lang="ru" data-value="Or use a third-party" data-translation="Или используйте сторонний" data-ch="0" data-type="trSpan">Или используйте сторонний</ya-tr-span></h2>
+          <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+            <svg class="bi me-1" width="16" height="16"><use xlink:href="#twitter"></use></svg><ya-tr-span data-index="21-0" data-translated="true" data-source-lang="en" data-target-lang="ru" data-value=" Sign up with Twitter " data-translation=" Зарегистрируйтесь в Twitter " data-ch="0" data-type="trSpan">  Зарегистрируйтесь через Telegram  </ya-tr-span></button>
+          <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+            <svg class="bi me-1" width="16" height="16"><use xlink:href="#facebook"></use></svg><ya-tr-span data-index="21-0" data-translated="true" data-source-lang="en" data-target-lang="ru" data-value=" " data-translation=" " data-ch="0" data-type="trSpan">  </ya-tr-span><ya-tr-span data-index="21-1" data-translated="true" data-source-lang="en" data-target-lang="ru" data-value="Sign up with Facebook " data-translation="Зарегистрируйтесь на Facebook " data-ch="0" data-type="trSpan">Зарегистрируйтесь через Google  </ya-tr-span></button>
+          <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+            <svg class="bi me-1" width="16" height="16"><use xlink:href="#github"></use></svg><ya-tr-span data-index="21-1" data-translated="true" data-source-lang="en" data-target-lang="ru" data-value=" " data-translation=" " data-ch="0" data-type="trSpan">  </ya-tr-span><ya-tr-span data-index="21-2" data-translated="true" data-source-lang="en" data-target-lang="ru" data-value="Sign up with GitHub " data-translation="Зарегистрируйтесь на GitHub " data-ch="0" data-type="trSpan">Зарегистрируйтесь через ВКонтакте </ya-tr-span></button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
